@@ -31,7 +31,7 @@ class ProductModel extends Model{
 
     public function deleteProduct($id_product)
     {
-        $query = $this->db->table($this->table)->update(['id_product' => $id_product]);
+        $query = $this->db->table($this->table)->delete(['id_product' => $id_product]);
         return $query;
     }
 
