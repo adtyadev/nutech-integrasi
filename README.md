@@ -31,3 +31,13 @@ database.default.DBDriver = MySQLi`
 
 9. Buka sistem pada url
 `http://localhost:8080/product`
+
+
+1. View : 
+![alt text] (https://github.com/adtyadev/nutech-integrasi/blob/master/view.PNG)
+2. Detail : 
+![alt text] (https://github.com/adtyadev/nutech-integrasi/blob/master/detail.PNG)
+3. Edit : 
+![alt text] (https://github.com/adtyadev/nutech-integrasi/blob/master/edit.PNG)
+4. Delete : 
+![alt text] (https://github.com/adtyadev/nutech-integrasi/blob/master/delete.PNG)
