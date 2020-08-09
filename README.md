@@ -8,14 +8,11 @@
 `composer update`
 
 3. Create Database dengan nama " nutech-integrasi " 
--hostname = localhost
--database = nutech-integrasi
--username = root
--password = 
--DBDriver = MySQLi
 
-4. jalankan migrate dan seed 
+4. environment Database => `hostname = localhost ; database = nutech-integrasi ; username = root ; password =  ; DBDriver = MySQLi`
+
+5. jalankan migrate dan seed 
 `php spark migrate` atau `php spark migrate:refresh` dan `php spark db:seed`
 
-5. run serve
+6. run serve
 `php spark serve`
