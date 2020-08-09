@@ -376,8 +376,8 @@
                     <?php foreach($product as $row):?>
                     <tr>
                         <td><?= $row['nama_barang'];?></td>
-                        <td>Rp <?= $row['harga_jual'];?></td>
                         <td>Rp <?= $row['harga_beli'];?></td>
+                        <td>Rp <?= $row['harga_jual'];?></td>
                         <td><?= $row['stock_product'];?></td>
                         <td>
                             <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
