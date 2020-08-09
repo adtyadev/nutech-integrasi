@@ -24,7 +24,7 @@ database.default.DBDriver = MySQLi`
 6. environment Database => `hostname = localhost ; database = nutech-integrasi ; username = root ; password =  ; DBDriver = MySQLi`
 
 7. jalankan migrate dan seed 
-`php spark migrate` atau `php spark migrate:refresh` dan `php spark db:seed`
+`php spark migrate` atau `php spark migrate:refresh` dan `php spark db:seed ProductSeeder`
 
 8. run serve
 `php spark serve`
