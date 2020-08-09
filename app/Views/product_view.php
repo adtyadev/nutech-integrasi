@@ -103,7 +103,7 @@
 
                                                     <span class="input-group-text">Qty</span>
                                                 </div>
-                                                <input required type="text" class="form-control" id="stockProductI"
+                                                <input required type="number" max="999" class="form-control" id="stockProductI"
                                                     name="stock_product">
                                             </div>
                                             <small id="stock-product-notif-insert" style="display: none; color:red"
@@ -243,7 +243,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">Rp</span>
                                                     </div>
-                                                    <input required type="text" class="form-control" id="hargaJualE">
+                                                    <input required type="number" class="form-control" id="hargaJualE">
                                                 </div>
                                                 <small id="harga-jual-notif-edit" style="display: none; color:red"
                                                     class="form-text">Field Harga Jual is Required</small>
@@ -256,7 +256,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">Rp</span>
                                                     </div>
-                                                    <input required type="text" class="form-control" id="hargaBeliE">
+                                                    <input required type="number" class="form-control" id="hargaBeliE">
                                                 </div>
                                                 <small id="harga-beli-notif-edit" style="display: none; color:red"
                                                     class="form-text">Field Harga Beli is Required</small>
@@ -276,7 +276,7 @@
 
                                             <span class="input-group-text">Qty</span>
                                         </div>
-                                        <input required type="text" class="form-control" id="stockProductE">
+                                        <input required type="number" max="999" class="form-control" id="stockProductE">
                                     </div>
                                     <small id="stock-product-notif-edit" style="display: none; color:red"
                                         class="form-text">Field Stock Product is Required</small>

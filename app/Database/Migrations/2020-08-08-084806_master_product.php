@@ -20,19 +20,19 @@ class MasterProduct extends Migration
             ],
             'harga_beli'       => [
                 'type'              => 'INT',
-                'constraint'        => 10,
+                'constraint'        => 15,
 				'default'           => 0,
 				'null'				=> TRUE,
 			],
 			'harga_jual'       => [
                 'type'              => 'INT',
-                'constraint'        => 10,
+                'constraint'        => 15,
 				'default'           => 0,
 				'null'				=> TRUE,
 			],
 			'stock_product'       => [
                 'type'              => 'INT',
-                'constraint'        => 4,
+                'constraint'        => 15,
 				'default'           => 0,
 				'null'				=> TRUE,
 			],
