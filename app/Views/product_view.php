@@ -481,6 +481,10 @@
                 return false;
             } else $("#gambar-product-notif-insert").css("display", "none");
             // var src_image = $(".modal-insert #gambarProduct").val();
+
+        //     var src_image = new FormData();
+        // var files = $('#gambarProdukI')[0].files[0];
+        // src_image.append('file',files);
             var src_image = "/asd/asd/as/d";
             $.ajax({
                 url: '<?=base_url()?>/product/save',

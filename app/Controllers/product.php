@@ -25,19 +25,42 @@ class product extends Controller{
     public function save()
     {
         $modelProduct = new ProductModel();
+        $validated = $this->validate([
+            'file' => [
+                'uploaded[file]',
+                'mime_in[file,image/jpg,image/jpeg,image/gif,image/png]',
+                'max_size[file,4096]',
+            ],
+        ]);
+ 
+        $msg = 'Please select a valid file';
+        if ($validated) {
+            $avatar = $this->request->getFile('src_image');
+            // $avatar_name = $avatar->getRandomName();
+            $avatar->move(WRITEPATH . 'uploads');
+        //   $data = [
+ 
+        //     'name' =>  $avatar->getClientName(),
+        //     'type'  => $avatar->getClientMimeType()
+        //   ];
+ 
+        //   $save = $builder->insert($data);
+        //   $msg = 'File has been uploaded';
+        }
         $data = [
             'nama_barang' => $this->request->getPost('nama_barang'),
             'harga_jual' => $this->request->getPost('harga_jual'),
             'harga_beli' => $this->request->getPost('harga_beli'),
             'stock_product' => $this->request->getPost('stock_product'),
-            'src_image' => $this->request->getPost('src_image')
+            // 'src_image' => $this->request->getPost('src_image'),
+            'src_image' =>"/asd/asd/as/d"
         ];
         $modelProduct->saveProduct($data);
         $response = [
             'status'   => 201,
             'error'    => null,
             'messages' => [
-                'success' => 'Data Saved'
+                'success' => 'Data Saved' 
             ]
         ];
         return $this->respondCreated($response);
