@@ -16,3 +16,6 @@
 
 6. run serve
 `php spark serve`
+
+7. Buka sistem pada url
+`http://localhost:8080/product`
