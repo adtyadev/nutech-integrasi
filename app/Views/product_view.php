@@ -380,7 +380,8 @@
                         <td>Rp <?= $row['harga_beli'];?></td>
                         <td><?= $row['stock_product'];?></td>
                         <td>
-                            <img style="
+                            <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+                            style="
           max-width : 50px;
           max-height : 50px;
           display : block;
